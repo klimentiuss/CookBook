@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F27A9C84FA7212A937DEE7E /* Pods_CookBookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C4F116B9D8865A14ACE88 /* Pods_CookBookApp.framework */; };
+		DC2376B528806EF400DDBBCD /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376B428806EF400DDBBCD /* Dish.swift */; };
+		DC2376B92880703C00DDBBCD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376B82880703C00DDBBCD /* StorageManager.swift */; };
+		DC2376BB2880705900DDBBCD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376BA2880705900DDBBCD /* DataManager.swift */; };
+		DC2376BD2880710F00DDBBCD /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376BC2880710F00DDBBCD /* MainCollectionViewController.swift */; };
+		DC2376BF2880712E00DDBBCD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376BE2880712E00DDBBCD /* CollectionViewCell.swift */; };
+		DC2376C12880717900DDBBCD /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376C02880717900DDBBCD /* AddViewController.swift */; };
+		DC2376C32880719200DDBBCD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376C22880719200DDBBCD /* DetailsViewController.swift */; };
 		DCD92A2B28805700003E8310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD92A2A28805700003E8310 /* AppDelegate.swift */; };
 		DCD92A2D28805700003E8310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD92A2C28805700003E8310 /* SceneDelegate.swift */; };
-		DCD92A2F28805700003E8310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD92A2E28805700003E8310 /* ViewController.swift */; };
 		DCD92A3228805701003E8310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD92A3028805700003E8310 /* Main.storyboard */; };
 		DCD92A3428805702003E8310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD92A3328805702003E8310 /* Assets.xcassets */; };
 		DCD92A3728805702003E8310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD92A3528805702003E8310 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F8A43763AA16B10FA4349E9 /* Pods-CookBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookApp.release.xcconfig"; path = "Target Support Files/Pods-CookBookApp/Pods-CookBookApp.release.xcconfig"; sourceTree = "<group>"; };
+		4C2C4F116B9D8865A14ACE88 /* Pods_CookBookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FAD573A0D965D86729FC8EF /* Pods-CookBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBookApp.debug.xcconfig"; path = "Target Support Files/Pods-CookBookApp/Pods-CookBookApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DC2376B428806EF400DDBBCD /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		DC2376B82880703C00DDBBCD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		DC2376BA2880705900DDBBCD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		DC2376BC2880710F00DDBBCD /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		DC2376BE2880712E00DDBBCD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DC2376C02880717900DDBBCD /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		DC2376C22880719200DDBBCD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DCD92A2728805700003E8310 /* CookBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD92A2A28805700003E8310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD92A2C28805700003E8310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCD92A2E28805700003E8310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCD92A3128805700003E8310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCD92A3328805702003E8310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD92A3628805702003E8310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +47,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F27A9C84FA7212A937DEE7E /* Pods_CookBookApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		175BFEDF9632D676D741253E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C4F116B9D8865A14ACE88 /* Pods_CookBookApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BBF538081E37BA03B1D377D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FAD573A0D965D86729FC8EF /* Pods-CookBookApp.debug.xcconfig */,
+				1F8A43763AA16B10FA4349E9 /* Pods-CookBookApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC2376AE28806E1400DDBBCD /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				DCD92A3328805702003E8310 /* Assets.xcassets */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		DC2376AF28806E2400DDBBCD /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DCD92A2A28805700003E8310 /* AppDelegate.swift */,
+				DCD92A2C28805700003E8310 /* SceneDelegate.swift */,
+				DCD92A3828805702003E8310 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		DC2376B028806E4800DDBBCD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DCD92A3028805700003E8310 /* Main.storyboard */,
+				DCD92A3528805702003E8310 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DC2376B128806E5500DDBBCD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC2376BC2880710F00DDBBCD /* MainCollectionViewController.swift */,
+				DC2376BE2880712E00DDBBCD /* CollectionViewCell.swift */,
+				DC2376C02880717900DDBBCD /* AddViewController.swift */,
+				DC2376C22880719200DDBBCD /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DC2376B228806E6F00DDBBCD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC2376B82880703C00DDBBCD /* StorageManager.swift */,
+				DC2376BA2880705900DDBBCD /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DC2376B328806E7800DDBBCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC2376B428806EF400DDBBCD /* Dish.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DCD92A1E28805700003E8310 = {
 			isa = PBXGroup;
 			children = (
 				DCD92A2928805700003E8310 /* CookBookApp */,
 				DCD92A2828805700003E8310 /* Products */,
+				8BBF538081E37BA03B1D377D /* Pods */,
+				175BFEDF9632D676D741253E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +147,12 @@
 		DCD92A2928805700003E8310 /* CookBookApp */ = {
 			isa = PBXGroup;
 			children = (
-				DCD92A2A28805700003E8310 /* AppDelegate.swift */,
-				DCD92A2C28805700003E8310 /* SceneDelegate.swift */,
-				DCD92A2E28805700003E8310 /* ViewController.swift */,
-				DCD92A3028805700003E8310 /* Main.storyboard */,
-				DCD92A3328805702003E8310 /* Assets.xcassets */,
-				DCD92A3528805702003E8310 /* LaunchScreen.storyboard */,
-				DCD92A3828805702003E8310 /* Info.plist */,
+				DC2376B328806E7800DDBBCD /* Models */,
+				DC2376B228806E6F00DDBBCD /* Services */,
+				DC2376B128806E5500DDBBCD /* ViewControllers */,
+				DC2376AF28806E2400DDBBCD /* SupportFiles */,
+				DC2376B028806E4800DDBBCD /* Storyboards */,
+				DC2376AE28806E1400DDBBCD /* Materials */,
 			);
 			path = CookBookApp;
 			sourceTree = "<group>";
@@ -74,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCD92A3B28805702003E8310 /* Build configuration list for PBXNativeTarget "CookBookApp" */;
 			buildPhases = (
+				56434C12CDD03EA9518C7687 /* [CP] Check Pods Manifest.lock */,
 				DCD92A2328805700003E8310 /* Sources */,
 				DCD92A2428805700003E8310 /* Frameworks */,
 				DCD92A2528805700003E8310 /* Resources */,
+				105D24F9FA3816B9F87A50BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +225,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		105D24F9FA3816B9F87A50BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CookBookApp/Pods-CookBookApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CookBookApp/Pods-CookBookApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CookBookApp/Pods-CookBookApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56434C12CDD03EA9518C7687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CookBookApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCD92A2328805700003E8310 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD92A2F28805700003E8310 /* ViewController.swift in Sources */,
+				DC2376B528806EF400DDBBCD /* Dish.swift in Sources */,
+				DC2376BD2880710F00DDBBCD /* MainCollectionViewController.swift in Sources */,
+				DC2376C32880719200DDBBCD /* DetailsViewController.swift in Sources */,
+				DC2376C12880717900DDBBCD /* AddViewController.swift in Sources */,
+				DC2376BB2880705900DDBBCD /* DataManager.swift in Sources */,
+				DC2376BF2880712E00DDBBCD /* CollectionViewCell.swift in Sources */,
 				DCD92A2B28805700003E8310 /* AppDelegate.swift in Sources */,
 				DCD92A2D28805700003E8310 /* SceneDelegate.swift in Sources */,
+				DC2376B92880703C00DDBBCD /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +422,7 @@
 		};
 		DCD92A3C28805702003E8310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FAD573A0D965D86729FC8EF /* Pods-CookBookApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,7 +430,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5KN7899368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CookBookApp/Info.plist;
+				INFOPLIST_FILE = CookBookApp/SupportFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YourOwnRecipe;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow acces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -304,12 +447,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DCD92A3D28805702003E8310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8A43763AA16B10FA4349E9 /* Pods-CookBookApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,7 +461,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5KN7899368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CookBookApp/Info.plist;
+				INFOPLIST_FILE = CookBookApp/SupportFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YourOwnRecipe;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow acces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +478,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
