@@ -10,10 +10,9 @@ import UIKit
 
 class Dish: Object {
     @objc dynamic var name = ""
-    @objc dynamic var imageString: String?
     @objc dynamic var image: Data?
     @objc dynamic var recipe = ""
-    @objc dynamic var ingridients: Ingridients?
+    var ingridients = List<Ingridients>()
 }
 
 class Ingridients: Object {
@@ -22,6 +21,6 @@ class Ingridients: Object {
 }
 
 
-class DishList: Object {
-    let dishes = List<Dish>()
-}
+//class DishList: Object {
+//    let dishes = List<Dish>()
+//}

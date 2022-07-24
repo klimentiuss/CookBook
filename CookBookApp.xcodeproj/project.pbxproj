@@ -15,6 +15,9 @@
 		DC2376BF2880712E00DDBBCD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376BE2880712E00DDBBCD /* CollectionViewCell.swift */; };
 		DC2376C12880717900DDBBCD /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376C02880717900DDBBCD /* AddViewController.swift */; };
 		DC2376C32880719200DDBBCD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2376C22880719200DDBBCD /* DetailsViewController.swift */; };
+		DCA30890288AC52900FFB160 /* Extantion + TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3088F288AC52900FFB160 /* Extantion + TableViewCell.swift */; };
+		DCA30892288C12B800FFB160 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA30891288C12B700FFB160 /* Ingredient.swift */; };
+		DCA30894288C177300FFB160 /* Extantion + AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA30893288C177300FFB160 /* Extantion + AlertController.swift */; };
 		DCD92A2B28805700003E8310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD92A2A28805700003E8310 /* AppDelegate.swift */; };
 		DCD92A2D28805700003E8310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD92A2C28805700003E8310 /* SceneDelegate.swift */; };
 		DCD92A3228805701003E8310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD92A3028805700003E8310 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		DC2376BE2880712E00DDBBCD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DC2376C02880717900DDBBCD /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		DC2376C22880719200DDBBCD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DCA3088F288AC52900FFB160 /* Extantion + TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extantion + TableViewCell.swift"; sourceTree = "<group>"; };
+		DCA30891288C12B700FFB160 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		DCA30893288C177300FFB160 /* Extantion + AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extantion + AlertController.swift"; sourceTree = "<group>"; };
 		DCD92A2728805700003E8310 /* CookBookApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBookApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD92A2A28805700003E8310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD92A2C28805700003E8310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,8 @@
 				DC2376BE2880712E00DDBBCD /* CollectionViewCell.swift */,
 				DC2376C02880717900DDBBCD /* AddViewController.swift */,
 				DC2376C22880719200DDBBCD /* DetailsViewController.swift */,
+				DCA3088F288AC52900FFB160 /* Extantion + TableViewCell.swift */,
+				DCA30893288C177300FFB160 /* Extantion + AlertController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				DC2376B428806EF400DDBBCD /* Dish.swift */,
+				DCA30891288C12B700FFB160 /* Ingredient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,9 +287,12 @@
 				DC2376C12880717900DDBBCD /* AddViewController.swift in Sources */,
 				DC2376BB2880705900DDBBCD /* DataManager.swift in Sources */,
 				DC2376BF2880712E00DDBBCD /* CollectionViewCell.swift in Sources */,
+				DCA30890288AC52900FFB160 /* Extantion + TableViewCell.swift in Sources */,
+				DCA30894288C177300FFB160 /* Extantion + AlertController.swift in Sources */,
 				DCD92A2B28805700003E8310 /* AppDelegate.swift in Sources */,
 				DCD92A2D28805700003E8310 /* SceneDelegate.swift in Sources */,
 				DC2376B92880703C00DDBBCD /* StorageManager.swift in Sources */,
+				DCA30892288C12B800FFB160 /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

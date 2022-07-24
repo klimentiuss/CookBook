@@ -11,14 +11,16 @@ import UIKit
 class DataManager {
     static let shared = DataManager()
     
+  //  let defaultDishes = DishList()
+    
+    var ingredients = [Ingredient]()
+    
     func createTempData(_ completion: @escaping () -> Void) {
         if !UserDefaults.standard.bool(forKey: "done") {
             
             
             UserDefaults.standard.set(true, forKey: "done")
-            
-            let defaultDishes = DishList()
-            
+                        
             //сделать метод
             guard let strudelImage = UIImage(named: "img1") else { return }
             guard let strudelImageData = strudelImage.jpegData(compressionQuality: 1.0) else { return }
@@ -35,10 +37,13 @@ class DataManager {
             let karbonara = Dish(value: ["name": "Паста карбонара", "image": karbonaraImageData])
             let pizza = Dish(value: ["name": "Пицца 4 сыра", "image": pizzaImageData])
             
-            defaultDishes.dishes.insert(contentsOf: [strudel, karbonara, pizza], at: 0)
+     //       defaultDishes.dishes.insert(contentsOf: [strudel, karbonara, pizza], at: 0)
             
             DispatchQueue.main.async {
-                StorageManager.shared.save(dishList: [defaultDishes])
+                StorageManager.shared.save(dish: strudel)
+                StorageManager.shared.save(dish: karbonara)
+                StorageManager.shared.save(dish: pizza)
+
                 completion()
             }
         }
