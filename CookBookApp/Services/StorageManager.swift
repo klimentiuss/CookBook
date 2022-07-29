@@ -14,12 +14,6 @@ class StorageManager {
     let realm = try! Realm()
     
     private init(){}
-
-//    func saveList(dishList: DishList) {
-//        write {
-//            realm.add(dishList)
-//        }
-//    }
     
     func save(dish: Dish) {
         write {
@@ -31,6 +25,12 @@ class StorageManager {
         write {
             realm.delete(dish.ingridients)
             realm.delete(dish)
+        }
+    }
+    
+    func add(ingredients: List<Ingridients>){
+        write {
+            realm.add(ingredients)
         }
     }
     

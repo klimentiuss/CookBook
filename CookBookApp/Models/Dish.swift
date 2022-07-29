@@ -21,6 +21,4 @@ class Ingridients: Object {
 }
 
 
-//class DishList: Object {
-//    let dishes = List<Dish>()
-//}
+

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol addViewControllerDelegate {
+protocol AddViewControllerDelegate {
     func reloadData()
 }
 
@@ -19,7 +19,7 @@ class AddViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var delegate: addViewControllerDelegate?
+    var delegate: AddViewControllerDelegate?
     
     var ingredients: [Ingredient] = []
     
@@ -32,6 +32,7 @@ class AddViewController: UIViewController {
         //    addObservers()
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -89,11 +90,8 @@ extension AddViewController: UIImagePickerControllerDelegate, UINavigationContro
 extension AddViewController {
     func saveNewDish() {
         
-        
         var dish = Dish()
-        
-        //сделать правильную загрузку ингридиентов в БД + реализовать удаление ингридиентов
-        
+                
         for ingredient in ingredients {
             let newIngredient = Ingridients()
             newIngredient.name = ingredient.ingredientName
@@ -116,9 +114,7 @@ extension AddViewController {
             "recipe": dishRecipe,
             "ingridients": dishIngredient
         ])
-        
-     //   DataManager.shared.defaultDishes.dishes.insert(contentsOf: [dish], at: 0)
-        
+                
         DispatchQueue.main.async {
             StorageManager.shared.save(dish: dish)
         }
@@ -171,8 +167,6 @@ extension AddViewController: UITextViewDelegate, UITextFieldDelegate {
 extension AddViewController {
     private func showAlert(withtitle title: String, andMessage message: String, ingredient:  Ingredient? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-       
         
         alert.addIngredient(withIngredient: ingredient) { name, count in
             if let ingredient = ingredient {
@@ -237,3 +231,5 @@ extension AddViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+

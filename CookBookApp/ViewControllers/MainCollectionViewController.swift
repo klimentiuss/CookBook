@@ -5,11 +5,12 @@
 //  Created by Daniil Klimenko on 14.07.2022.
 //
 
-import UIKit
 import RealmSwift
 
-// Починить удаление массива из БД
-// Добавить добавление в  tableView (Alert) и сохранение ингридиентов в модель
+protocol MaincVCDelegate {
+    func getDish() -> Dish
+}
+
 
 class MainCollectionViewController: UICollectionViewController {
     
@@ -33,7 +34,9 @@ class MainCollectionViewController: UICollectionViewController {
         createTempData()
         
         navigationItem.leftBarButtonItem = editButtonItem
-      
+        navigationItem.leftBarButtonItem?.tintColor = .systemYellow
+        
+        
     }
     
     
@@ -60,13 +63,6 @@ class MainCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    
-    //    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    //
-    //    }
-    
-    
-    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         collectionView.allowsMultipleSelectionDuringEditing = editing
@@ -85,9 +81,19 @@ class MainCollectionViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addVC" {
-            let addVC = segue.destination as! AddViewController
+            guard let addVC = segue.destination as? AddViewController else { return }
             addVC.delegate = self
         }
+        
+//        if segue.identifier == "detailsVC" {
+//            guard let indexPathsForSelectedItems = collectionView.indexPathsForSelectedItems else { return }
+//            guard let indexPath = indexPathsForSelectedItems.last else { return }
+//
+//            guard let detailsVC = segue.destination as? DetailsViewController else { return }
+//
+//            let dish = dishList[indexPath.row]
+//            detailsVC.dish = dish
+//        }
     }
     
     private func createTempData() {
@@ -136,6 +142,17 @@ extension MainCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInserts.left
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if !isEditing {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "detailsVC") as? DetailsViewController
+            vc?.mainVCdelegate = self
+            
+            self.navigationController?.pushViewController(vc!, animated: true)
+            
+            
+        }
+    }
 }
 
 
@@ -146,17 +163,28 @@ extension MainCollectionViewController {
             secondbuttom.tintColor = .clear
         } else {
             secondbuttom.isEnabled = true
-            secondbuttom.tintColor = .systemBlue
+            secondbuttom.tintColor = .systemRed
         }
     }
 }
 
 
 
-extension MainCollectionViewController: addViewControllerDelegate {
+extension MainCollectionViewController: AddViewControllerDelegate {
     func reloadData() {
         DispatchQueue.main.async {
             self.collectionView!.reloadData()
         }
     }
+}
+
+extension MainCollectionViewController: MaincVCDelegate {
+    func getDish() -> Dish {
+        let indexPathsForSelectedItems = collectionView.indexPathsForSelectedItems
+        let indexPath = indexPathsForSelectedItems?.last
+        let dish = dishList[indexPath?.row ?? 0]
+        return dish
+    }
+    
+    
 }

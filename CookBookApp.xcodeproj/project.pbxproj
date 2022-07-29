@@ -443,7 +443,7 @@
 				DEVELOPMENT_TEAM = 5KN7899368;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CookBookApp/SupportFiles/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = YourOwnRecipe;
+				INFOPLIST_KEY_CFBundleDisplayName = CookBook;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow acces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -474,7 +474,7 @@
 				DEVELOPMENT_TEAM = 5KN7899368;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CookBookApp/SupportFiles/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = YourOwnRecipe;
+				INFOPLIST_KEY_CFBundleDisplayName = CookBook;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow acces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
